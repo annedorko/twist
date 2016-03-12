@@ -1,0 +1,6 @@
+# Let's ignore some basics, shall we?
+*.sass-cache/
+*.sass-cache/*
+*.DS_Store
+main.css.map
+main.css

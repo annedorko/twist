@@ -1,0 +1,19 @@
+/*
+Theme Name: Twist, a WordPress Starter Theme
+Theme URI: https://github.com/annedorko/twist
+Author: Anne Dorko
+Author URI: http://www.annedorko.com/
+Description: An unopinionated starter theme designed for the rapid design and development of sturdy, lightweight themes that will stand the test of time.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* NOTE: Don't edit this for your styles!
+
+Edit your CSS from the _scss folder, your theme will refer to the main.css generated.
+
+Run `sass --watch _scss/main.scss:main.css --style compressed` from your command line to keep your styles up to date while you work. */
