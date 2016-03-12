@@ -10,7 +10,7 @@ Twist is _not_ designed to be shipped as-is. It provides you with the tools you 
 
 ### DRY Theme Wrappers
 
-Based on [Scribu's Theme Wrapper](scribu.net/wordpress/theme-wrappers.html) class, you can use one simple wrapper for your project and keep your templates DRY.
+Based on [Scribu's Theme Wrapper](http://scribu.net/wordpress/theme-wrappers.html) class, you can use one simple wrapper for your project and keep your templates DRY.
 
 ### FontAwesome
 
