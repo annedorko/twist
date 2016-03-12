@@ -4,6 +4,8 @@ Author's note – Bear with me, this is my first public GitHub project.
 
 ## What's Included
 
+Twist is an ultra minimal starter theme loaded with all the features you need ready to go at a moment's notice. The theme itself includes practically nothing, but the ingredients provided will allow you to create almost anything your heart desires.
+
 Twist is _not_ designed to be shipped as-is. It provides you with the tools you need to get an elegant and fully functional project running quickly.
 
 ### DRY Theme Wrappers
