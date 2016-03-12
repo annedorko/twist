@@ -32,12 +32,18 @@ You get complete control over the future of your typography, but it's always bes
 
 Twist's current typographic baseline is [Devin Hunt's typebase.css](https://github.com/devinhunt/typebase.css/blob/master/src/typebase.sass).
 
-### Future Features: Material Design Mixins, Automated Theme Builds, and beyond
+### Future Features
+
+#### Material Design Mixins, Automated Theme Builds, and beyond
 
 For the sake of getting this project off the ground, I'm launching without a few of the basics I'm looking at incorporating in the future. These being:
 
-– Material Design mixins for shadows, forms, and buttons
-– Automated Theme Builds from the command line
+* Some more basic templating included
+* Default supports for the basics that should really come baked in with every theme
+* Material Design mixins for shadows, forms, and buttons
+* Automated theme builds from the command line
+
+...what do you want to see?
 
 ## Getting Started
 
