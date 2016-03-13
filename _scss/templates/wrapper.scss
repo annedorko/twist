@@ -1,0 +1,58 @@
+body {
+  color: $black;
+}
+.container {
+  @include outer-container;
+}
+header {
+  background: $black;
+  border-bottom: 1px solid darken( $black, 15% );
+  color: $white;
+  text-align: center;
+
+  .logo {
+    width: 20%;
+    height: auto;
+    margin: 4vh 0;
+  }
+  h1 {
+    margin: 0;
+
+    .light {
+      font-size: .6em;
+      color: $primary-color;
+    }
+  }
+
+  .project-buttons {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0 1em;
+    }
+  }
+
+  p {
+    margin: 0 10vw;
+  }
+}
+main {
+}
+footer {
+  background: lighten( $secondary-color, 10 );
+  border-top: 1px solid darken($secondary-color, 10 );
+  color: transparentize(white, 0.5);
+}
+
+/* Other classes */
+.button {
+  font-size: .9em;
+  padding: .25em .75em;
+  border-radius: 3px;
+  display: inline-block;
+
+  @include buttonColors( $action-color );
+  &:hover {
+    @include buttonHoverColors( $action-color );
+  }
+}

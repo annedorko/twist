@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: 'Twist: a WordPress Starter Theme'
+email: anne@withoutboxes.com
+description: > # this means to ignore newlines until "baseurl:"
+  Homepage of the Twist WordPress starter theme by Anne Dorko
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: annedorko
+github_username:  annedorko
+
+# Build settings
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+permalink: /:title
+redirects: yes
+sass:
+    style: compressed
+    sass_dir: ./_scss
+exclude: ["lib", "blog.rb", "Capfile", "config", "log", "Rakefile", "tmp", ".DS_Store"]

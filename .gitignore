@@ -1,6 +1,4 @@
-# Let's ignore some basics, shall we?
-*.sass-cache/
-*.sass-cache/*
+_site
+.sass-cache
+.jekyll-metadata
 *.DS_Store
-main.css.map
-main.css
