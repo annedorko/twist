@@ -1,0 +1,22 @@
+@mixin buttonColors( $color ) {
+    color: lighten( $color, 90% );
+    text-shadow: 1px -1px 0 darken( $color, 10% );
+    background-color: $color;
+    box-shadow: -1px 1px 0 darken( $color, 5% );
+}
+@mixin buttonHoverColors( $color ) {
+    color: lighten( $color, 80% );
+    background-color: darken( $color, 10% );
+    box-shadow: -1px 1px 0 darken( $color, 25% );
+}
+@mixin buttonLightColors( $color ) {
+    color: $black;
+    text-shadow: 1px -1px 0 lighten( $color, 10% );
+    background-color: $color;
+    box-shadow: -1px 1px 0 darken( $color, 5% );
+}
+@mixin buttonLightHoverColors( $color ) {
+    color: darken( $black, 80% );
+    background-color: darken( $color, 10% );
+    box-shadow: -1px 1px 0 darken( $color, 25% );
+}

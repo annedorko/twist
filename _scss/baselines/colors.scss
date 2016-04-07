@@ -1,10 +1,4 @@
-/* Theme HEX Colors */
-$primary-color: #26C6DA;
-$secondary-color: #3B1070;
-$action-color: #D53732;
-$white: #EFEFEF;
-$black: #232323;
-
+/* Social HEX Colors */
 /* Social HEX Colors */
 $twitter: #00aced;
 $facebook: #3b5998;
@@ -26,26 +20,52 @@ $stumbleupon: #EB4823;
 $yahoo: #7B0099;
 $blogger: #fb8f3d;
 $soundcloud: #ff3a00;
+$github: #4183c4;
 
 /* Adjusting external tools to existing colors */
-$body-bg: $white;
 
 body {
-  color: #222;
+  color: $black;
+  background: $white;
 }
 
 // Actions
 a {
-  color: $action-color;
+  color: $link-color;
   text-decoration: none;
+  transition: color .3s ease-in-out;
+  &:hover {
+    color: darken( $link-color, 10% );
+  }
 }
 
-a.social-link {
+a.social {
+  &.icon {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+    i {
+      padding: 0;
+      margin: 0;
+    }
+  }
   &.facebook {
     color: $facebook;
   }
   &.linkedin {
     color: $linkedin;
+  }
+  &.github {
+    color: $github;
+  }
+  &.gplus {
+    color: $googleplus;
+  }
+  &.youtube {
+    color: $youtube;
   }
   &.twitter {
     color: $twitter;
@@ -55,5 +75,55 @@ a.social-link {
   }
   &.rss {
     color: orange;
+  }
+  &.button {
+    &.facebook {
+      @include buttonColors( $facebook );
+      &:hover {
+        @include buttonHoverColors( $facebook );
+      }
+    }
+    &.linkedin {
+      @include buttonColors( $linkedin );
+      &:hover {
+        @include buttonHoverColors( $linkedin );
+      }
+    }
+    &.github {
+      @include buttonColors( $github );
+      &:hover {
+        @include buttonHoverColors( $github );
+      }
+    }
+    &.gplus {
+      @include buttonColors( $googleplus );
+      &:hover {
+        @include buttonHoverColors( $googleplus );
+      }
+    }
+    &.youtube {
+      @include buttonColors( $youtube );
+      &:hover {
+        @include buttonHoverColors( $youtube );
+      }
+    }
+    &.twitter {
+      @include buttonColors( $twitter );
+      &:hover {
+        @include buttonHoverColors( $twitter );
+      }
+    }
+    &.instagram {
+      @include buttonColors( $instagram );
+      &:hover {
+        @include buttonHoverColors( $instagram );
+      }
+    }
+    &.rss {
+      @include buttonColors( orange );
+      &:hover {
+        @include buttonHoverColors( orange );
+      }
+    }
   }
 }

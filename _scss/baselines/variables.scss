@@ -1,0 +1,27 @@
+/* additional colors in colors.scss
+sass --watch _scss/main.scss:main.css --style compressed
+ */
+
+$primary-color: #3392B0;
+$secondary-color: #631E86;
+$action-color: #FF9900;
+$link-color: $action-color; // Default to action color
+$white: #EFEFEF;
+$black: #201F2E;
+
+/* Typography */
+
+// Typesetting
+$baseFontSize: 24;
+$baseLineHeight: 1.58;
+$leading: $baseLineHeight * 1rem;
+
+// Set font-families, defaulted into "Headings", "Body", and "Interfaces" (buttons, etc.)
+$heading-font: $helvetica;
+$body-font: $georgia;
+$interface-font: $helvetica;
+
+/* Breakpoints */
+$mobile: new-breakpoint(min-width 1px max-width 658px 4);
+$medium: new-breakpoint(min-width 768px 12);
+$large:  new-breakpoint(min-width 1200px 12);

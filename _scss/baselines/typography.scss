@@ -3,24 +3,16 @@ https://github.com/devinhunt/typebase.css/blob/master/src/typebase.sass
 TODO: Check against https://www.google.com/design/spec/style/typography.html#typography-styles
  */
 
-// Base Typesetting
-$baseFontSize: 24;
-$baseLineHeight: 1.58;
-$leading: $baseLineHeight * 1rem;
-
-// Currently pulling from Bourbon defaults
-$serif-font: $georgia;
-$sans-font: $helvetica;
-
 // Rate of growth for headings
 // I actually like this to be slightly smaller then the leading. Makes for tight headings.
 $scale: .9;
+$headLeading: ($baseLineHeight * .7) * 1rem;
 
 /* Setup */
 html {
   /* Change default typefaces here */
-  font-weight: 200;
-  font-family: $serif-font;
+  font-weight: 300;
+  font-family: $body-font;
   font-size: $baseFontSize / 16 * 100%;
   // Make everything look a little nicer in webkit
   -webkit-font-smoothing: antialiased;
@@ -29,6 +21,14 @@ html {
   // -ms-text-size-adjust: auto
   // -o-text-size-adjust: auto
   // text-size-adjust: auto
+
+  // Set these using the embedded font weights
+  i, em {
+      font-weight: 400;
+  }
+  strong {
+      font-weight: 700;
+  }
 }
 
 /* Copy & Lists */
@@ -59,40 +59,49 @@ blockquote {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   /* Change heading typefaces here */
-  font-weight: 900;
-  font-family: $sans-font;
-  margin-top: $leading;
+  font-weight: 700;
+  font-family: $heading-font;
+  margin-top: $headLeading;
   margin-bottom: 0;
-  line-height: $leading;
+  line-height: $headLeading;
   letter-spacing: -0.03em;
 }
 
 h1 {
-  font-size: 3 * $scale * 1rem;
-  line-height: 3 * $leading;
+  font-size: 2.2 * $scale * 1rem;
+  line-height: 3 * $headLeading;
   margin-top: 2 * $leading;
+  @include media( $medium ) {
+    font-size: 3 * $scale * 1rem;
+  }
 }
 
 h2 {
-  font-size: 2 * $scale * 1rem;
-  line-height: 2 * $leading;
-  margin-top: 2 * $leading;
+  font-size: 1.8 * $scale * 1rem;
+  line-height: 2 * $headLeading;
+  margin-top: 1.8 * $leading;
+  @include media ( $medium ) {
+    font-size: 2 * $scale * 1rem;
+    margin-top: 2 * $leading;
+  }
 }
 
 h3 {
-  font-size: 1 * $scale * 1rem;
+  font-size: 1.6 * $scale * 1rem;
+  line-height: 1.6 * $headLeading;
 }
 
 h4, ul.menu {
-  font-size: $scale / 1.2 * 1rem;
+  font-size: $scale * 1.4 * 1rem;
+  font-weight: normal;
 }
 
 h5 {
-  font-size: $scale / 1.4 * 1rem;
+  font-size: $scale * 1.2 * 1rem;
 }
 
 h6 {
-  font-size: $scale / 1.6 * 1rem;
+  font-size: $scale * 1.1 * 1rem;
 }
 
 /* Tables */
@@ -114,7 +123,7 @@ code {
 
 /* Leading paragraph text */
 .lead {
-  font-size: $scale * 1rem;
+  font-size: 1.25 * 1rem;
 }
 
 /* Hug a the block above you */

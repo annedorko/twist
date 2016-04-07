@@ -8,15 +8,22 @@
 /* Font Awesome */
 @import "vendor/fontawesome/font-awesome";
 
-/* Set Breakpoints */
-$mobile: new-breakpoint(max-width 500px 4);
+/* Project Variables */
+@import "baselines/variables";
+// Copy/Paste variables into your own file to ensure that you don't lose data for future updates
+// @import "baselines/variables-custom";
 
 /* Project Baselines */
+@import "baselines/mixins.scss";
 @import "baselines/material.scss";
 @import "baselines/colors";
 @import "baselines/typography";
 @import "baselines/forms.scss";
 
-/* Templates */
+/* Included Templates */
 @import "templates/wrapper";
 @import "templates/nav";
+
+/*
+    Add custom styles below, as the above are subject to updates
+*/

@@ -1,6 +1,6 @@
 
 /* Source: https://gist.github.com/paulmelnikow/7fcfbe4f68e5df7fe326 */
-@mixin box_shadow ($level) {
+@mixin card($level) {
     @if $level == 1 {
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     } @else if $level == 2 {
