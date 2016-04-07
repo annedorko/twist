@@ -6,17 +6,18 @@
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <?php wp_head(); ?>
+	<?php wp_head(); ?>
 </head>
 <body>
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
     <a href="<?php bloginfo( 'url' ); ?>" class="logo">
       <!-- SVG logo goes well here -->
+		<?php bloginfo( 'name' ); ?>
     </a>
     <a class="navigation-menu-button" id="js-mobile-menu"><i class="fa fa-bars"></i></a>
     <nav role="navigation">
-      <?php wp_nav_menu( 'primary_menu' ); ?>
+		<?php wp_nav_menu( 'primary_menu' ); ?>
     </nav>
   </div>
 </header>
@@ -31,8 +32,8 @@
   </ul>
 </div>
 <main>
-  <?php /* Main content goes here! */ ?>
-  <?php include twist_template_path(); ?>
+	<?php /* Main content goes here! */ ?>
+	<?php include twist_template_path(); ?>
 </main>
 <footer>
   <div class="container">
