@@ -20,15 +20,17 @@ FontAwesome comes bundled and ready for action.
 
 Themes often get weighed down by unnecessary bulk that come built in with large frameworks like Bootstrap or Foundation. For truly customized themes, you end up writing your own styles, anyways.
 
+Think about it like walking into a room with thousands of art supplies. Alone, they don't mean much, but when you pair it with a little creativity, you are only limited by your imagination.
+
 Bourbon and Neat offer incredibly simple SCSS libraries to include only exactly what you need for a quick and responsive layout.
 
 * [Bourbon Docs](http://bourbon.io/docs/)
 * [Neat Docs](http://thoughtbot.github.io/neat-docs/latest/)
 * [Refills](http://refills.bourbon.io/)
 
-Normalize.css is also included for an optimal starting point.
+Normalize.css is included for an optimal starting point.
 
-### Typographic Baseline
+### Responsive Typographic Baseline
 
 You get complete control over the future of your typography, but it's always best to start with a baseline that keeps everything mathematical and clean.
 
