@@ -51,7 +51,7 @@ For the sake of getting this project off the ground, I'm launching without a few
 
 ## Getting Started
 
-Run `sass --watch _scss/main.scss:main.css --style compressed` from the terminal within the project folder, and use the `_scss` folder to manage your styles.
+Run `sass --watch _scss/style.scss:style.css --style compressed` from the terminal within the project folder, and use the `_scss` folder to manage your styles.
 
 Use the `wrapper.php` to manage anything you normally would from `get_header()` or `get_footer()`
 
