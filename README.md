@@ -57,6 +57,14 @@ Use the `wrapper.php` to manage anything you normally would from `get_header()` 
 
 Beyond that, everything runs fairly normally!
 
+## Wrapping Up
+
+When you're ready to upload your theme somewhere else, you can step back to the `wp-content/themes/` folder and run this in the command line:
+
+`zip --exclude=*.git* --exclude=*.DS_Store* --exclude=*scss/* --exclude=*sass/* --exclude=*.css.map* --exclude=*README.md* -r twist.zip twist/`
+
+You can upload the resulting twist.zip file anywhere you need to use your theme.
+
 ### A few tips for future compatibility:
 
 As this is a new project, things are going to change a lot and become more modularized to help with future updates. For now, keep things as clean as possible by controlling your settings using the existing variables.
