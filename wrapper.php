@@ -1,23 +1,24 @@
 <!doctype html>
-<html lang="<?php bloginfo( 'language' ); ?>">
+<html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/main.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-	<?php wp_head(); ?>
+   <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
+  <?php wp_head(); ?>
 </head>
 <body>
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
-    <a href="<?php bloginfo( 'url' ); ?>" class="logo">
+    <a href="<?php echo esc_url( home_url() )  ?>" class="logo">
       <!-- SVG logo goes well here -->
-		<?php bloginfo( 'name' ); ?>
+      <?php bloginfo('name'); ?>
     </a>
     <a class="navigation-menu-button" id="js-mobile-menu"><i class="fa fa-bars"></i></a>
     <nav role="navigation">
-		<?php wp_nav_menu( 'primary_menu' ); ?>
+      <?php wp_nav_menu( 'primary_menu' ); ?>
     </nav>
   </div>
 </header>
@@ -31,9 +32,9 @@
     <li><a href="" class="social-link rss"><i class="fa fa-rss-square"></i></a></li>
   </ul>
 </div>
-<main>
-	<?php /* Main content goes here! */ ?>
-	<?php include twist_template_path(); ?>
+<main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <?php /* Main content goes here! */ ?>
+  <?php include twist_template_path(); ?>
 </main>
 <footer>
   <div class="container">

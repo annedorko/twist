@@ -1,0 +1,45 @@
+/*!
+Theme Name: Twist, a WordPress Starter Theme
+Theme URI: https://github.com/annedorko/twist
+Author: Anne Dorko
+Author URI: http://www.annedorko.com/
+Description: An unopinionated starter theme designed for the rapid design and development of sturdy, lightweight themes that will stand the test of time.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+/* Normalize */
+@import "vendor/normalize.scss";
+
+/* Initialize Bourbon & Neat */
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+
+/* Font Awesome */
+@import "vendor/fontawesome/font-awesome";
+
+/* Project Variables */
+@import "baselines/variables";
+// Copy/Paste variables into your own file to ensure that you don't lose data for future updates
+// @import "baselines/variables-custom";
+
+/* Project Baselines */
+@import "baselines/mixins";
+@import "baselines/material";
+@import "baselines/colors";
+@import "baselines/typography";
+@import "baselines/wordpress";
+@import "baselines/forms";
+
+/* Included Templates */
+@import "templates/wrapper";
+@import "templates/nav";
+
+/*
+    Add custom styles below, as the above are subject to updates
+*/
