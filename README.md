@@ -24,7 +24,7 @@ FontAwesome 4.7.0 comes bundled and ready for action.
 
 While Bootstrap and Foundation are great frameworks when you’re in a pinch for production, I usually find they are a little much for my from-scratch themes.
 
-I use Bourbon and Neat to write fast, flexible, and completely custom styles from scratch without having to reinvent the wheel. Think about Twist like walking into a room with thousands of art supplies. Individually, each supply don't mean much, but when you pair them with a little creativity on the canvas, you are only limited by your imagination.
+I use Bourbon and Neat to write fast, flexible, and completely custom styles from scratch without having to reinvent the wheel. Think about Twist like walking into a room with thousands of art supplies. Individually, each supply doesn't mean much, but when you pair them with a little creativity on canvas, your imagination is the only limitation.
 
 Learn more about using Bourbon and Neat here:
 
@@ -50,7 +50,7 @@ As I continue to use Twist for projects, I will continue adding the features tha
 
 ## Getting Started
 
-Twist uses SASS. To generate the necessary WordPress files, use this command within the terminal in your project folder: 
+Twist uses SASS. To generate the necessary WordPress files, use this command within the terminal in your project folder:
 
 `sass --watch _scss/style.scss:style.css --style compressed`
 
