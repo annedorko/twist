@@ -45,7 +45,7 @@ For the sake of getting this project off the ground, I'm launching without a few
 * Some more basic templating included
 * Default supports for the basics that should really come baked in with every theme
 * Material Design mixins for shadows, forms, and buttons
-* Automated theme builds from the command line
+* ~~Automated theme builds from the command line~~ [This is now an independent ZIP builder for the WP CLI project](https://github.com/annedorko/zip-package)
 
 ...what do you want to see?
 
