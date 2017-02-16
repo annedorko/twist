@@ -2,60 +2,65 @@
 layout: default
 ---
 
-Author's note – Bear with me, this is my first public GitHub project.
+Twist is a no-nonsense WordPress starter theme that doesn’t assume anything about what kind of theme you want to build, while offering you a solid toolbox to create your own theme from scratch.
+
+Pair with the [WP CLI Zip Package](https://github.com/annedorko/zip-package) for easy theme builds.
 
 ## What's Included
 
 Twist is an ultra minimal starter theme loaded with all the features you need ready to go at a moment's notice. The theme itself includes practically nothing, but the ingredients provided will allow you to create almost anything your heart desires.
 
-Twist is _not_ designed to be shipped as-is. It provides you with the tools you need to get an elegant and fully functional project running quickly.
+Please remember, Twist is _not_ designed to be shipped as-is. It merely provides you with the tools you need to get an elegant and fully functional project running quickly. Those tools are as follows.
 
 ### DRY Theme Wrappers
 
-Based on [Scribu's Theme Wrapper](http://scribu.net/wordpress/theme-wrappers.html) class, you can use one simple wrapper for your project and keep your templates DRY.
+Keep your templates DRY with a theme wrapper, instead of the traditional `get_header();` and `get_footer();` tags.
+
+Wrappers are based on [Scribu's Theme Wrapper](http://scribu.net/wordpress/theme-wrappers.html).
 
 ### FontAwesome
 
-FontAwesome comes bundled and ready for action.
+FontAwesome 4.7.0 comes bundled and ready for action.
 
 ### SCSS Libraries: Bourbon & Neat
 
-Themes often get weighed down by unnecessary bulk that come built in with large frameworks like Bootstrap or Foundation. For truly customized themes, you end up writing your own styles, anyways.
+While Bootstrap and Foundation are great frameworks when you’re in a pinch for production, I usually find they are a little much for my from-scratch themes.
 
-Bourbon and Neat offer incredibly simple SCSS libraries to include only exactly what you need for a quick and responsive layout.
+I use Bourbon and Neat to write fast, flexible, and completely custom styles from scratch without having to reinvent the wheel. Think about Twist like walking into a room with thousands of art supplies. Individually, each supply don't mean much, but when you pair them with a little creativity on the canvas, you are only limited by your imagination.
+
+Learn more about using Bourbon and Neat here:
 
 * [Bourbon Docs](http://bourbon.io/docs/)
 * [Neat Docs](http://thoughtbot.github.io/neat-docs/latest/)
 * [Refills](http://refills.bourbon.io/)
 
-Normalize.css is also included for an optimal starting point.
+Meanwhile, the default CSS to get you started is [Normalize.css](https://necolas.github.io/normalize.css/).
 
-### Typographic Baseline
+### Responsive Typographic Baseline
 
-You get complete control over the future of your typography, but it's always best to start with a baseline that keeps everything mathematical and clean.
+The future of your theme’s typography rests in your hands. However, I believe in using a solid baseline to keep everything mathamatical and clean automatically.
 
-Twist's current typographic baseline is [Devin Hunt's typebase.css](https://github.com/devinhunt/typebase.css/blob/master/src/typebase.sass).
+Twist offers you [Devin Hunt's typebase.css](https://github.com/devinhunt/typebase.css/blob/master/src/typebase.sass).
 
 ### Future Features
 
-#### Material Design Mixins, Automated Theme Builds, and beyond
-
-For the sake of getting this project off the ground, I'm launching without a few of the basics I'm looking at incorporating in the future. These being:
+As I continue to use Twist for projects, I will continue adding the features that make from-scratch theme development simple. Here are a few ideas I hope to add one day. Feel free to make a pull request and add your own feature!
 
 * Some more basic templating included
-* Default supports for the basics that should really come baked in with every theme
+* Default supports for the basics that should really come baked in with every theme, like a Customizer class, Widgets class, and so on
 * Material Design mixins for shadows, forms, and buttons
-* Automated theme builds from the command line
-
-...what do you want to see?
 
 ## Getting Started
 
-Run `sass --watch _scss/main.scss:main.css --style compressed` from the terminal within the project folder, and use the `_scss` folder to manage your styles.
+Twist uses SASS. To generate the necessary WordPress files, use this command within the terminal in your project folder: 
 
-Use the `wrapper.php` to manage anything you normally would from `get_header()` or `get_footer()`
+`sass --watch _scss/style.scss:style.css --style compressed`
 
 Beyond that, everything runs fairly normally!
+
+## Wrapping Up
+
+I use the [WP CLI Zip Package](https://github.com/annedorko/zip-package) to create deliverable .zip folders once my theme is completed.
 
 ### A few tips for future compatibility:
 
