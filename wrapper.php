@@ -10,7 +10,7 @@
 	<?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 <header role="banner">
   <div class="container">
     <a href="<?php echo esc_url( home_url() )  ?>" class="logo">
